@@ -1,4 +1,7 @@
 package com.example.sbawebapp.repository;
 
-public interface BookRepository {
+import com.example.sbawebapp.domain.Book;
+import org.springframework.data.repository.CrudRepository;
+
+public interface BookRepository extends CrudRepository<Book, Long> {
 }

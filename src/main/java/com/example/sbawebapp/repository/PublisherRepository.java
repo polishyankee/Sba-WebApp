@@ -1,4 +1,7 @@
 package com.example.sbawebapp.repository;
 
-public interface PublisherRepository {
+import com.example.sbawebapp.domain.Publisher;
+import org.springframework.data.repository.CrudRepository;
+
+public interface PublisherRepository extends CrudRepository<Publisher, Long> {
 }
